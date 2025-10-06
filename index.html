@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ろありーＡＲ</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<model-viewer
+    src="roarii.glb"
+    ios-src="roarii.usdz"
+    alt="Astronaut model"
+    ar
+    ar-modes="webxr"
+    camera-controls
+    autoplay animation-name="idle"
+    shadow-intensity="1"
+>
+    <button slot="ar-button" id="ar-button">
+        AR撮影
+    </button>
+</model-viewer>
+</body>
+</html>
