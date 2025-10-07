@@ -9,8 +9,6 @@
         model-viewer {
             width: 100vw;
             height: 100vh;
-            transform: scale(0.5);
-            transform-origin: center center;
         }
     </style>
 </head>
@@ -24,6 +22,8 @@
     camera-controls
     autoplay animation-name="idle"
     shadow-intensity="1"
+    camera-orbit="0deg 90deg 100m"
+    camera-target="0m 0m 0m"
 >
     <button slot="ar-button" id="ar-button">
         AR撮影
